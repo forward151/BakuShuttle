@@ -5,4 +5,4 @@ from .models import Car
 
 @admin.register(Car)
 class Car(admin.ModelAdmin):
-    fields = ["model", "number", "description", "photo"]
+    list_display = ["model", "number", "description", "photo"]

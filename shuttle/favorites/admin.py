@@ -5,4 +5,4 @@ from .models import Favorite
 
 @admin.register(Favorite)
 class Favorite(admin.ModelAdmin):
-    fields = ["user", "address", "description"]
+    list_display = ["user", "address", "description"]

@@ -5,6 +5,6 @@ from .models import History
 
 @admin.register(History)
 class History(admin.ModelAdmin):
-    fields = ["client", "driver", "address_from", "address_to", "date", "total_price"]
+    list_display = ["client", "driver", "address_from", "address_to", "date", "total_price"]
 
 
