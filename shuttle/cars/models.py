@@ -6,7 +6,7 @@ class Car(models.Model):
     model = models.CharField(max_length=100)
     number = models.CharField(max_length=100)
     description = models.TextField()
-    photo = models.ImageField()
+    photo = models.ImageField(upload_to="cars", null=True, blank=True)
 
     def __str__(self):
         return f"{self.model} - {self.number}"
