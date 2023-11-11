@@ -42,33 +42,6 @@ body {
 
 #description {
     resize: vertical;
-    max-height: 200px;
+    max-height: 250px;
 }
 
-.cars-field {
-    border: 1px solid #bfbfbf;
-    border-radius: 8px;
-    width: 100%;
-}
-
-.cars-field .form-group {
-    margin-bottom: 1.5rem;
-}
-.custom-select {
-    color: #000;
-    background-color: #fff;
-    border: 1px solid #bfbfbf;
-}
-.custom-select:hover {
-    border-color: #bfbfbf;
-}
-.custom-select:focus {
-    border: #bfbfbf;
-}
-
-.custom-select{
-    width: 100%;
-    font-size: 23px;
-    height: 45px;
-    border-radius: 7px;
-}

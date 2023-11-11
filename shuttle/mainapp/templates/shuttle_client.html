@@ -1,13 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 {% block css %}
-  <link rel="stylesheet" href="{% static '/css/shuttle_driver.css' %}">
+  <link rel="stylesheet" href="{% static '/css/shuttle_client.css' %}">
 {% endblock %}
 {% block title %}
 <title>shuttle</title>
-{% endblock %}
-{% block role %}
-    Switch to Client
 {% endblock %}
 
 {% block content %}
@@ -17,7 +14,7 @@
                 <!-- Form for Taxi Order -->
                 <div class="col-lg-3 order-form" id="formOrder">
                     <form>
-                        <h2 class="text-center">Set trip</h2>
+                        <h2 class="text-center">Order trip</h2>
                         <div class="mb-3">
                             <input type="text" class="form-control" id="pickupLocation" placeholder="Pickup location">
                         </div>
@@ -34,24 +31,9 @@
                             <label for="dateDepart"><small style="color: #919191; margin-left: 5px; font-weight: 500;">Departure time:</small></label>
                             <input type="time" class="form-control" id="dateDepart">
                         </div>
-
-                        <div class="mb-3 d-flex justify-content-center">
-                            <div class="row d-flex cars-field">
-                                <div class="form-group">
-                                    <label for="car-selection" style="font-size: 20px; color: #a3a3a2; margin-bottom: 10px; margin-top: 10px; font-weight: 400;">Select vehicle:</label>
-                                    <select class="custom-select" id="car-selection">
-                                        <option selected>First vehicle</option>
-                                        <option value="1">Second vehicle</option>
-                                        <option value="2">Third vehicle</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="btn-order">
-                            <button type="submit" class="sbmt-btn">Publish route</button>
+                            <button type="submit" class="sbmt-btn">Find</button>
                         </div>
-
                     </form>
                 </div>
                 <!-- Map Section -->
