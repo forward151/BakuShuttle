@@ -1,0 +1,55 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    background-color: #fff; /*#fff*/
+    min-width: 320px;
+}
+
+img {
+    max-width: 23px;
+    height: auto;
+}
+
+section {
+    padding: 50px 0;
+}
+
+a {
+    color: #111; /*#111*/
+}
+
+a:hover{
+    color: #555; /*#555*/
+}
+
+.navbar-nav .dropdown-menu {
+    right: 0;
+    left: auto;
+/*
+    text-align: center;
+*/
+}
+
+
+
+.underline-menu li a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 1px;
+    transition: all .3s;
+    transform: scale(0);
+}
+
+.underline-menu li a:hover::after {
+    transform: scale(1);
+    background-color: #fff;
+}
+

@@ -44,7 +44,8 @@ INSTALLED_APPS += [
     "cars.apps.CarsConfig",
     "users.apps.UsersConfig",
     "history.apps.HistoryConfig",
-    "favorites.apps.FavoritesConfig"
+    "favorites.apps.FavoritesConfig",
+    "mainapp.apps.MainappConfig"
 ]
 
 MIDDLEWARE = [
